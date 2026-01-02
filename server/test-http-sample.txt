@@ -1,0 +1,10 @@
+Example POST payload (JSON):
+{
+  "name": "Alice Example",
+  "email": "alice@example.com",
+  "phone": "123456789",
+  "message": "Hello from sample"
+}
+
+GET /api/contacts returns array of saved contacts.
+DELETE /api/contacts/:id to delete a contact (bonus).
