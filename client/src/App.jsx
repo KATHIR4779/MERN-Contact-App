@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import ContactForm from './components/ContactForm'
 import ContactList from './components/ContactList'
 
-// Use Vite env `VITE_API_URL` if present; otherwise fall back to localhost
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+// Use Vite env `VITE_API_URL` if present; otherwise fall back to machine IP where the server is reachable
+const API = import.meta.env.VITE_API_URL || 'http://10.153.238.82:5000'
 
 export default function App(){
   const [contacts, setContacts] = useState([])
