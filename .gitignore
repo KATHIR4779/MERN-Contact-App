@@ -1,0 +1,15 @@
+# Top-level ignores
+node_modules
+.env
+
+# Client and server envs
+client/.env
+server/.env
+
+# Vite / build
+client/dist
+client/node_modules
+
+# Misc
+.DS_Store
+.vscode
