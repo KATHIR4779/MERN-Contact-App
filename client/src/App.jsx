@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react'
 import ContactForm from './components/ContactForm'
 import ContactList from './components/ContactList'
 
-// Use Vite env `VITE_API_URL` if present; in production we expect serverless functions under `/api` on Vercel
-// Fall back to machine IP for local development when not set
-const API = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://10.153.238.82:5000')
+// Use Vite env `VITE_API_URL` if present; otherwise fall back to machine IP where the server is reachable
+const API = import.meta.env.VITE_API_URL || 'http://10.153.238.82:5000'
 
 export default function App(){
   const [contacts, setContacts] = useState([])
